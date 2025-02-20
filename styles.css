@@ -1,0 +1,195 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Formulario de Agregar Producto */
+form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Tabla de productos */
+table {
+    width: 100%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mensajes de éxito y error */
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+p.success {
+    color: green;
+}
+
+p.error {
+    color: red;
+}
+
+/* Estilo para el enlace de "Añadir nuevo producto" */
+a {
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: #ffffff; /* Color de texto blanco */
+    background-color: #007bff; /* Color de fondo azul */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    display: inline-block; /* Para que el padding funcione bien */
+    margin-top: 20px; /* Espacio arriba */
+    text-align: center; /* Centrar el texto dentro del enlace */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves para hover */
+}
+
+/* Efecto hover */
+a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando el ratón pasa sobre el enlace */
+    transform: scale(1.05); /* Hace un pequeño zoom al pasar el ratón */
+}
+
+/* Estilo específico para el enlace de "Añadir nuevo producto" */
+#agregar {
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: #ffffff; /* Color de texto blanco */
+    background-color: #007bff; /* Color de fondo azul */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    display: block; /* Hacer que el enlace sea un bloque */
+    width: max-content; /* Ajusta el ancho al contenido */
+    margin: 20px auto; /* Centra el enlace horizontalmente */
+    text-align: center; /* Centrar el texto dentro del enlace */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves para hover */
+}
+
+/* Efecto hover */
+#agregar:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando el ratón pasa sobre el enlace */
+    transform: scale(1.05); /* Hace un pequeño zoom al pasar el ratón */
+}
+
+/* Consultas de medios (Media Queries) */
+@media screen and (max-width: 768px) {
+    /* En pantallas más pequeñas, el formulario y la tabla deben adaptarse */
+    form {
+        width: 90%;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    /* Asegúrate de que los textos y botones no se salgan de la pantalla */
+    table th, table td {
+        padding: 8px;
+    }
+
+    a, #agregar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* En pantallas más pequeñas como teléfonos móviles */
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+
+    a, #agregar {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
