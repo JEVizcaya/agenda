@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     color: #4CAF50;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 3px #000000;
 }
 
 /* Formulario de Agregar Producto */
